@@ -1,0 +1,16 @@
+.status-container {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  width: 100%;
+  right: 0;
+  text-align: center;
+  padding: 0.5em 0;
+  color: #FFFFFF;
+  background-color: #2ab32a;
+  border-radius: 0.5rem 0.5rem 0 0;
+
+  &.disconnected {
+    background-color: #f04545;
+  }
+}
