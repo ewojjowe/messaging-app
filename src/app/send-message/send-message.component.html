@@ -1,0 +1,17 @@
+<div class="send-message">
+  <textarea
+    class='message-input'
+    type="text"
+    name="message"
+    [(ngModel)]="message"
+    [ngModelOptions]="{standalone: true}"
+    required
+  ></textarea>
+  <button
+    class="btn-send"
+    (click)="handleSendMessage()"
+    [disabled]="message === ''"
+  >
+    Send
+  </button>
+</div>

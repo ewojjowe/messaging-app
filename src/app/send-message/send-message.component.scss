@@ -1,0 +1,23 @@
+.send-message {
+  display: flex;
+  margin-top: 0.5rem;
+
+  .message-input {
+    font-family: "Eina03", Open Sans, -apple-system, sans-serif !important;
+    outline: 0;
+    padding: 0.5rem;
+    height: 82px;
+    width: 80%;
+    resize: none;
+  }
+
+  .btn-send {
+    width: 15%;
+    margin: 0 0 0 auto;
+    outline: 0;
+
+    &:not(:disabled) {
+      cursor: pointer;
+    }
+  }
+}
