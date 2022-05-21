@@ -16,7 +16,7 @@
 
 ## About: <a name = "about"></a>
 
-This messaging app was written with the [Angular](https://angular.io/) framework.
+This messaging app is written with the [Angular](https://angular.io/) framework.
 It uses [RxStomp](https://github.com/stomp-js/rx-stomp) to connect with to
 **RabbitMQ** messaging server via **WebSockets**. A wrapper over
 [STOMP.js](https://github.com/stomp-js/stompjs) which exposes the STOMP operations
@@ -32,7 +32,7 @@ provided to us.
 
 ## Acceptance Criteria: <a name = "acceptance_criteria"></a>
 
-- Should connect to provided rabbitmq messaging server via websockets
+- Should connect to the provided RabbitMQ messaging server via Websockets
 - Should be able to send a message using the provided server
 - Should show current connection status of the application
 - Should show a history or list of any messages sent
