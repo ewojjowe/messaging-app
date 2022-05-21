@@ -1,27 +1,43 @@
-# MessagingServer
+<p align="center">
+ <img src="https://p79.f0.n0.cdn.getcloudapp.com/items/bLuBY5EO/ec9e72d4-e3ca-4e12-824f-f119ecf3a60e.jpeg?source=viewer&v=2bd7269628df5b9939a2c8acf5c76df9" alt="Messaging App"></a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+<h3 align="center">The Documentation Compendium</h3>
 
-## Development server
+---
+
+## Table of Contents
+
+- [About](#about)
+- [Deliverables](#deliverables)
+- [Acceptance Criteria](#acceptance_criteria)
+- [Development server](#server)
+
+
+## About: <a name = "about"></a>
+
+This messaging app was written with the [Angular](https://angular.io/) framework.
+It uses [RxStomp](https://github.com/stomp-js/rx-stomp) to connect with to
+**RabbitMQ** messaging server via **WebSockets**. A wrapper over
+[STOMP.js](https://github.com/stomp-js/stompjs) which exposes the STOMP operations
+as RxJS Observables. It provides almost all operations provided by the underlying
+library. 
+
+## Deliverables: <a name = "deliverables"></a>
+
+- All code that is written as part of this test should be submitted to us for review. The files
+themselves can be sent directly to us via email or file sharing (Google Drive, Dropbox, etc.), or
+the code can be committed to a public Github repository, and the link to that repository can be
+provided to us.
+
+## Acceptance Criteria: <a name = "acceptance_criteria"></a>
+
+- Should connect to provided rabbitmq messaging server via websockets
+- Should be able to send a message using the provided server
+- Should show current connection status of the application
+- Should show a history or list of any messages sent
+
+## Development server: <a name = "server"></a>
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
