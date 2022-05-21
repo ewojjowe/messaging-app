@@ -1,0 +1,41 @@
+.inbox-container {
+  height: 300px;
+  overflow: scroll;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+  }
+
+
+  &__messages {
+    display: inline-block;
+    width: 100%;
+
+    .empty-inbox {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #9d9090;
+      padding: 2rem 0;
+    }
+
+    .message {
+      padding: 1.25rem 0.25rem;
+
+      &--body {
+        margin: 0;
+
+        &__datetime {
+          color: #9d9090;
+          font-size: 0.65rem;
+        }
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #ebebeb;
+      }
+    }
+  }
+}

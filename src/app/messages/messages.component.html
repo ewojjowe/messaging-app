@@ -1,0 +1,19 @@
+<div class="inbox-container">
+  <div class="inbox-container__messages">
+    <div
+      class="empty-inbox"
+      *ngIf="messageList.length === 0"
+    >
+      No message recorded yet
+    </div>
+    <div
+      class="message"
+      *ngFor="let message of messageList"
+    >
+      <p class="message--body">
+        {{message.body}}
+        <span class="message--body__datetime">{{message.date | date:'h:mm a'}}</span>
+      </p>
+    </div>
+  </div>
+</div>
